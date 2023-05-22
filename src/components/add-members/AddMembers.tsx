@@ -1,5 +1,5 @@
 import React from "react";
-import CenteredOverlayForm from "./common/CenteredOverlayForm";
+import CenteredOverlayForm from "../common/CenteredOverlayForm";
 
 const AddMembers: React.FC = () => {
   return (

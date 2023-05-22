@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import CreateGroup from "./components/CreateGroup";
-import AddMembers from "./components/AddMembers";
-import ExpenseMain from "./components/ExpenseMain";
-import { PATH } from "./routes/path";
+import CreateGroup from "@components/create-group/CreateGroup";
+import AddMembers from "@components/add-members/AddMembers";
+import ExpenseMain from "@components/expense-main/ExpenseMain";
+import { PATH } from "@routes/path";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
