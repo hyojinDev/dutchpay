@@ -2,16 +2,14 @@ import styled from "styled-components";
 
 interface OverlayWrapperProps {
   children: React.ReactNode;
-  minHeight?: string;
 }
 
-const OverlayWrapper: React.FC<OverlayWrapperProps> = ({
-  children,
-  minHeight = "0",
-}) => <StyledContainer minHeight={minHeight}>{children}</StyledContainer>;
+const OverlayWrapper: React.FC<OverlayWrapperProps> = ({ children }) => (
+  <StyledContainer>{children}</StyledContainer>
+);
 
-const StyledContainer = styled.div<{ minHeight: string }>`
-  min-height: ${({ minHeight }) => minHeight};
+const StyledContainer = styled.div`
+  min-height: 70vh;
   padding: 2vw;
   border-radius: 15px;
   background-color: white;

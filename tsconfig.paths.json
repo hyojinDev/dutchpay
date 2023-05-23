@@ -5,7 +5,8 @@
       "@components/*": ["src/components/*"],
       "@routes/*": ["src/routes/*"],
       "@styles/*": ["src/styles/*"],
-      "@state/*": ["src/state/*"]
+      "@state/*": ["src/state/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   }
 }

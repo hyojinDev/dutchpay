@@ -3,15 +3,19 @@ import { Form } from "react-bootstrap";
 import CenteredOverlayForm from "@components/common/CenteredOverlayForm";
 import { useRecoilState } from "recoil";
 import { groupNameState } from "@state/group-name";
+import { ROUTE_UTILS } from "@routes/routeUtils";
+import { useNavigate } from "react-router-dom";
 
 const CreateGroup: React.FC = () => {
   const [validated, setValidated] = useState(false);
   const [validGroupName, setValidGroupName] = useState(false);
   const [groupName, setGroupName] = useRecoilState(groupNameState);
+  const navigate = useNavigate();
 
   const saveGroupName = () => {
     // TODO: DB에 groupName 저장 후, add members로 redirect
     console.log("Save Group name");
+    navigate(ROUTE_UTILS.ADD_MEMBERS("test-guid"));
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
